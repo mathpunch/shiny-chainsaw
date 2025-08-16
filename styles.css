@@ -3,6 +3,8 @@ body, html {
   padding: 0;
   overflow: hidden;
   background: #000;
+  font-family: sans-serif;
+  color: white;
 }
 
 #overlay {
@@ -13,10 +15,10 @@ body, html {
   pointer-events: none;
 }
 
-#startBtn, #fireBtn, #reloadBtn {
+#startBtn, #fireBtn {
   position: absolute;
   bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
   pointer-events: auto;
   background: rgba(255,255,255,0.2);
@@ -25,8 +27,7 @@ body, html {
 }
 
 #startBtn { left: 20px; }
-#fireBtn { right: 100px; }
-#reloadBtn { right: 20px; }
+#fireBtn { right: 20px; }
 
 #joystick {
   position: absolute;
@@ -37,4 +38,13 @@ body, html {
   background: rgba(255,255,255,0.2);
   border-radius: 50%;
   pointer-events: auto;
+  touch-action: none;
+}
+
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  pointer-events: none;
 }
