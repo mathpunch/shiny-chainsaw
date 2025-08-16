@@ -1,50 +1,42 @@
-body, html {
+body {
   margin: 0;
-  padding: 0;
   overflow: hidden;
-  background: #000;
+  background: #111;
   font-family: sans-serif;
-  color: white;
-}
-
-#overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-}
-
-#startBtn, #fireBtn {
-  position: absolute;
-  bottom: 20px;
-  font-size: 18px;
-  padding: 10px;
-  pointer-events: auto;
-  background: rgba(255,255,255,0.2);
-  border: none;
-  border-radius: 10px;
-}
-
-#startBtn { left: 20px; }
-#fireBtn { right: 20px; }
-
-#joystick {
-  position: absolute;
-  bottom: 100px;
-  left: 20px;
-  width: 100px;
-  height: 100px;
-  background: rgba(255,255,255,0.2);
-  border-radius: 50%;
-  pointer-events: auto;
   touch-action: none;
 }
 
-#hud {
+#gameCanvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#joystick {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  touch-action: none;
+}
+
+#stick {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#score {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 16px;
-  pointer-events: none;
+  color: white;
+  font-size: 20px;
 }
